@@ -19,7 +19,10 @@ public class TestVin {
 		
 		
 		MiamMiam.setPrix(MiamMiam.getPrix() + 2);
+		setTotalPrix(getTotalPrix() + 2);
+		setTotalPrix(getTotalPrix() - Delicieux.getPrix());
 		Delicieux.setPrix(23);
+		setTotalPrix(getTotalPrix() + Delicieux.getPrix());
 		Delicieux.setOrigin("Italie");
 		Mystere.setNomVin("Vino Verde");
 		Mystere.setType(Vin.Blanc);
